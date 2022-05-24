@@ -13,3 +13,17 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 }
 .topMenu li:last-child:after{display: none;}
 .topMenu li a{display: block; padding: 7px 10px; font-size: 12px; line-height: 12px;}
+
+#headerWrap h1{margin: 0 auto;
+    width: 151px;}
+
+#headerWrap h1 a{color: #333;}
+
+#headerWrap .toggle{
+    width: 48px; height: 48px;
+    border: 1px solid #cdcdcd;
+    position: absolute;
+    left:calc( 50% + 980px / 2 - 48px ); top:38px;
+}
+
+
