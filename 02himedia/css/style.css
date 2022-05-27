@@ -3,7 +3,7 @@
 body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* header */
-.headerTopWrap{border-bottom: 1px solid #dcdcdc;}
+/* .headerTopWrap{border-bottom: 1px solid #dcdcdc;} */
 .headerTop{width: 980px; margin: 0 auto;}
 .topMenu ul{float: right;}
 .topMenu li{float: left; position: relative;}
@@ -126,20 +126,32 @@ nav.navbar{background-color: #1D5DA4;}
 .container.sec02 .txt .btn{color:#4D8BE0;font-weight: bold;}
 
 /* footer */
+.footerWrap{background-color: #5E5E5E;} 
 .footerWrap{background-color: #5E5E5E;}
-
-.ftNav{
-    background-color: #4D4D4D;
+.footerTop{background-color: #4D4D4D;}
+.container.footer .ftNav{float: left;}
+.container.footer .topMove{float: right;width:60px;height: 45px;background-color: #404040;}
+.ftNav li{float: left;position: relative;}
+.ftNav li:after{
+    content:"";display: block;width: 1px;height: 13px;
+    background-color: #ccc;position: absolute;right: 0;top: 17px;
 }
+/* .ftNav li:first-child:before{
+    content:"";display: block;width: 1px;height: 13px;
+    background-color: #ccc;position: absolute;left: 0;top: 17px;
+} */
 
-.ftNav ul{}
-.ftNav li{float: left; padding-top: 15px; padding-bottom: 15px; color: #CBCBCB; font-size: 12px; }
+.ftNav li:last-child:after{display: none;}
+.ftNav li:first-child a{padding-left: 0;}
 
-.ftNav li:nth-child(1){
-border-right:  1px solid #717171; padding-right: 19px; padding-left: 19px;}
-.ftNav li:nth-child(2){
-    border-right:  1px solid #717171; padding-right: 19px; padding-left: 19px;}
-    .ftNav li:nth-child(3){
-        border-right:  1px solid #717171 ; padding-right: 19px; padding-left: 19px;}
-
-span.em{padding-right: 15px;}
+.ftNav li a{
+    display: block;padding: 16px 18px;font-size: 13px;
+    color:#ccc;line-height: 13px;
+}
+.container.footer .topMove a{display: block;line-height: 45px;padding-top: 11px;}
+.container.footer .topMove img{margin: 0 auto;}
+.container.ftBottom{padding: 20px 0;}
+.container.ftBottom div{float: left;font-size: 13px;color:#ccc;}
+.container.ftBottom .logo{
+    width: 100px;height: 100px;text-align: center;line-height: 100px;
+    margin-right: 20px;}

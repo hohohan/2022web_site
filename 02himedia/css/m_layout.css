@@ -1,0 +1,30 @@
+@charset "uft-8";
+
+headerWrap .center{width: 980px;margin: 0 auto;position: relative;padding: 16px 0;}
+
+#headerWrap h1{
+    margin: 0 auto;width: 160px;
+    }
+#headerWrap h1 a{color:#333}  
+
+#headerWrap .toggle{
+    width: 48px;height: 48px;
+    border: 1px solid #cdcdcd;
+    position: absolute;right: 0;top: 14px;
+    cursor:pointer
+}
+.toggle div{
+    width: 20px;height: 2px;background-color: #666;
+    position: absolute;left:calc( 50% - 10px);
+    top:calc( 50%  - 1px )
+}
+.toggle div:first-child{top:calc( 50% - 9px)}
+.toggle div:last-child{top:calc( 50% + 7px)}
+
+
+@media screen and (max-width:720px){
+    .headerTopWrap{
+        display: none;
+    }
+    #headerWrap .center{width: 100%}
+}
