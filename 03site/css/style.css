@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+body{font-family: 'Noto Sans', sans-serif;}
+
+/* header */
+
+.headerWrap{position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: moccasin;
+}
+.headerWrap h1{
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 32px;
+    background-size: 165px auto;
+}
+.headerWrap h1 a{display: block; width: 165px; height: 35px;}
+.navbar{}
+.topmenu{}
+.topmenu ul{float: right;}
+.topmenu li{
+    float: left;display: block; position: relative;
+    width: 170px; text-align: center;
+}
+.topmenu li a{
+    display: block; line-height: 76px; font-size: 20px;
+    letter-spacing: 0.6px; font-weight: 700; color: white;
+}
+
+
+/* visual */
+
+.container{margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;}
+.visualWrap{}
+.visual{}
+.visual img{width: 100%;}
